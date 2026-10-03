@@ -1,0 +1,332 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, My Love ❤️</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 680px;
+      padding: 40px 25px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 30px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 2;
+      animation: appear 1.5s ease;
+    }
+
+    .heart {
+      font-size: 65px;
+      animation: heartbeat 1.5s infinite;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 8vw, 4rem);
+      margin-bottom: 15px;
+      text-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      font-size: clamp(1.2rem, 5vw, 1.8rem);
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+
+    .greeting {
+      text-align: left;
+      font-size: clamp(1rem, 4vw, 1.12rem);
+      line-height: 1.8;
+      margin-bottom: 18px;
+      background: rgba(255,255,255,0.12);
+      padding: 18px;
+      border-radius: 18px;
+    }
+
+    .wish {
+      background: rgba(255,255,255,0.18);
+      border-radius: 20px;
+      padding: 22px;
+      margin: 25px 0;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    button {
+      border: none;
+      padding: 15px 28px;
+      border-radius: 50px;
+      background: #fff;
+      color: #e75480;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.08);
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    .floating-heart {
+      position: fixed;
+      bottom: -50px;
+      animation: floatUp linear infinite;
+      opacity: 0.7;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.18); }
+    }
+
+    @keyframes floatUp {
+      from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+      20% {
+        opacity: 0.8;
+      }
+      to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 16px;
+        border-radius: 24px;
+      }
+
+      .heart {
+        font-size: 52px;
+      }
+
+      .greeting {
+        padding: 15px;
+        line-height: 1.7;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="heart">❤️</div>
+
+    <h1>Happy Birthday!</h1>
+
+    <h2>To My Beautiful Wife, My Mi Amor 💕</h2>
+
+    <!-- 4 PARAGRAPH GREETING -->
+
+    <p class="greeting">
+      My love, today is a very special day because it is the day the world
+      was blessed with someone as amazing and wonderful as you. I want you
+      to know how grateful I am to have you in my life. You bring happiness,
+      warmth, laughter, and so many beautiful memories into my days.
+    </p>
+
+    <p class="greeting">
+      On your birthday, I wish that you will always have the strength to
+      chase your dreams and the courage to face every challenge that comes
+      your way. May all the dreams and goals that you have in your heart
+      slowly become reality, and may every new chapter of your life bring
+      you closer to the happiness you deserve.
+    </p>
+
+    <p class="greeting">
+      I also wish that we continue to grow together, understand each other,
+      support each other, and create countless memories that we can look
+      back on someday with big smiles. Life may not always be perfect,
+      and we may have our little arguments and silly moments, but I will
+      always treasure the bond and love that we share.
+    </p>
+
+    <p class="greeting">
+      Happy Birthday to my beautiful wife, my Mi Amor, and my favorite
+      Angry Chipmunks! 😂❤️ Thank you for being you and for being such an
+      important part of my life. I hope today reminds you of just how loved
+      and special you are. I love you always, and I will keep wishing for
+      your happiness today, tomorrow, and every day that follows.
+    </p>
+
+    <div class="wish">
+      ✨ <strong>My Birthday Wish For You</strong> ✨<br><br>
+
+      May your birthday be filled with happiness, love, laughter,
+      beautiful memories, good health, and everything your heart wishes for.
+      May all your dreams and goals be granted in the right time.
+
+      <br><br>
+
+      May we continue making beautiful memories together. ❤️
+    </div>
+
+    <button onclick="celebrate()">
+      🎉 Celebrate Your Birthday 🎉
+    </button>
+
+    <div class="footer">
+      Made with ❤️ especially for you, for you only!
+    </div>
+
+  </div>
+
+  <script>
+    // Floating hearts
+    const hearts = ["❤️", "💕", "💗", "💖", "💐", "✨"];
+
+    function createHeart() {
+      const heart = document.createElement("div");
+
+      heart.className = "floating-heart";
+      heart.innerHTML =
+        hearts[Math.floor(Math.random() * hearts.length)];
+
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize =
+        (15 + Math.random() * 25) + "px";
+
+      heart.style.animationDuration =
+        (5 + Math.random() * 5) + "s";
+
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 10000);
+    }
+
+    setInterval(createHeart, 700);
+
+
+    // Confetti celebration
+    function celebrate() {
+
+      const duration = 5000;
+      const end = Date.now() + duration;
+
+      const colors = [
+        "#ff4d6d",
+        "#ff85a1",
+        "#ffd166",
+        "#ffffff",
+        "#c77dff",
+        "#80ed99"
+      ];
+
+      function frame() {
+
+        const particle = document.createElement("div");
+
+        particle.style.position = "fixed";
+        particle.style.left = Math.random() * 100 + "vw";
+        particle.style.top = "-10px";
+        particle.style.width = "10px";
+        particle.style.height = "10px";
+
+        particle.style.background =
+          colors[Math.floor(Math.random() * colors.length)];
+
+        particle.style.borderRadius = "2px";
+        particle.style.zIndex = "9999";
+        particle.style.pointerEvents = "none";
+
+        const rotation = Math.random() * 360;
+
+        particle.animate(
+          [
+            {
+              transform:
+                `translateY(0) rotate(${rotation}deg)`,
+              opacity: 1
+            },
+            {
+              transform:
+                `translateY(110vh)
+                 translateX(${Math.random() * 300 - 150}px)
+                 rotate(${rotation + 720}deg)`,
+              opacity: 0.8
+            }
+          ],
+          {
+            duration: 2500 + Math.random() * 2000,
+            easing: "cubic-bezier(.2,.8,.3,1)"
+          }
+        );
+
+        document.body.appendChild(particle);
+
+        setTimeout(() => particle.remove(), 5000);
+
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      }
+
+      frame();
+
+      // Extra hearts
+      for (let i = 0; i < 25; i++) {
+        setTimeout(createHeart, i * 100);
+      }
+    }
+  </script>
+
+</body>
+</html>
+```
